@@ -20,7 +20,7 @@ export const http = () => {
     }, function (error) {
         if (error.response.status == 401) {
             localStorage.clear();
-            window.location.href = '/SistemaVentasVue/#/login';
+            window.location.href = 'https://patoaparicio.github.io/SistemaVentasVue/#/login';
         }
         return Promise.reject(error);
     });
@@ -44,7 +44,7 @@ export const httpAsset = () => {
     }, function (error) {
         if (error.response.status == 401) {
             localStorage.clear();
-            window.location.href = '/SistemaVentasVue/#/login';
+            window.location.href = 'https://patoaparicio.github.io/SistemaVentasVue/#/login';
         }
         return Promise.reject(error);
     });
